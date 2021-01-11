@@ -8,7 +8,6 @@ export { default as Form } from './form';
 export { default as Profiles } from './profiles';
 export { default as Loading } from './loading';
 export { default as Main } from './card';
-export { default as Player } from './player';
 export { default as Billboard } from './billboard';
 export { default as CategoryCarousel } from './carousel';
 export { default as BigModal } from './bigModal';

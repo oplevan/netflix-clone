@@ -7,7 +7,6 @@ import {
   Header,
   Billboard,
   Main,
-  Player,
   CategoryCarousel,
 } from '../components';
 import { FirebaseContext } from '../context/firebase';
@@ -47,6 +46,7 @@ export function BrowseContainer({ slides }) {
     } else {
       setSlideRows(slides[category]);
     }
+    // eslint-disable-next-line
   }, [searchTerm]);
 
   const handleClick = () => {

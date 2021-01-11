@@ -19,7 +19,7 @@ export default function useAuthListener() {
     });
 
     return () => listener(); // clean up the listener
-  }, []);
+  }, [firebase]); // dependency was empty
 
   return { user };
 }

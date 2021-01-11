@@ -101,12 +101,12 @@ const BigModal = (props) => {
             <div className='detailsMetadata-right'>
               <div className='previewModal--tags'>
                 <span className='label'>Cast: </span>
-                {cast.map((actor) => {
+                {cast.map((actor, i) => {
                   return (
-                    <>
+                    <div key={i}>
                       <span className='tag-item'>{actor}</span>
                       <span className='comma'>, </span>
-                    </>
+                    </div>
                   );
                 })}
               </div>
@@ -116,12 +116,12 @@ const BigModal = (props) => {
               </div>
               <div className='previewModal--tags'>
                 <span className='label'>This programme is: </span>
-                {tags.map((item) => {
+                {tags.map((item, i) => {
                   return (
-                    <>
+                    <div key={i}>
                       <span className='tag-item'>{item}</span>
                       <span className='comma'>, </span>
-                    </>
+                    </div>
                   );
                 })}
               </div>
@@ -132,7 +132,7 @@ const BigModal = (props) => {
             <div className='moreLikeThis--container'>
               {props.relatedItems.map((item) => {
                 return (
-                  <div className='moreLikeThis--card'>
+                  <div key={item.id} className='moreLikeThis--card'>
                     <div className='imageWrapper'>
                       {item.genre === 'netflix-originals' ? (
                         <img

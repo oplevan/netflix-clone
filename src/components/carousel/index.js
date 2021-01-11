@@ -62,6 +62,7 @@ const CategoryCarousel = ({ category, data, deviceType }) => {
     return () => {
       clearTimeout(timer);
     };
+    // eslint-disable-next-line
   }, [hovered]);
 
   const showMiniModal = (props) => {

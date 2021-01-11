@@ -8,11 +8,15 @@ This project is currently in development. Additional functionality as well as so
 
 ## Project Demo & Screen Shots
 
-..\* [Live demo](https://www.google.com). If don't wish to sign up you can use guest login details below
-Login: `guest@test.com`
-Password: `guest123`
+- [Live demo](https://www.google.com).
 
-..\* For Screen Shots go to `screenshots` folder in this repository or click the [link](../screenshots)
+  \*\* If you don't wish to sign up you can use login details below:
+
+  \*\*\* Login: `guest@test.com`
+
+  \*\*\* Password: `guest123`
+
+- For Screen Shots go to `screenshots` folder in this repository or click the [link](https://github.com/oplevan/netflix-clone/tree/master/screenshots)
 
 ## Installation and Setup Instructions
 
@@ -34,7 +38,7 @@ To Visit App:
 
 `localhost:3000/`
 
-## Reflection
+## Description
 
 In this React Project I'm trying to replicate Netflix - the world's leading streaming entertainment platform. At this moment it has multiple pages such as Home, Sign In & Sign Up and Browse.
 

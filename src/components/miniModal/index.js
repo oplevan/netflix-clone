@@ -38,7 +38,6 @@ const MiniModal = (props) => {
   const useStyles = createUseStyles({
     miniModal: {
       position: 'absolute',
-      zIndex: '10',
       top: '-35%',
       width: `calc(${props.targetPosition.width}px + 7.6%)`,
       borderRadius: '5px 5px 0 0',
@@ -118,9 +117,9 @@ const MiniModal = (props) => {
       '@media screen and (max-width: 1099px)': {
         animationName: `$closeMiniModal--M`,
       },
-      '@media screen and (max-width: 1099px)': {
-        animationName: `$closeMiniModal--S`,
-      },
+      // '@media screen and (max-width: 1099px)': {
+      //   animationName: `$closeMiniModal--S`,
+      // },
     },
 
     // CLOSE MINI MODAL ANIMATION
@@ -355,9 +354,9 @@ const MiniModal = (props) => {
               <div className='duration'>{duration}</div>
             </div>
             <ul className='tags'>
-              {tags.map((tag) => {
+              {tags.map((tag, i) => {
                 return (
-                  <li>
+                  <li key={i}>
                     <span>{tag}</span>
                   </li>
                 );
