@@ -1,19 +1,18 @@
-## Netflix Replication/Clone
+## Netflix Clone
 
-This is my personal Netflix Clone project, built with React, Firebase, JavaScript, HTML5 and CSS3.
+This is Netflix Clone project, built with React, Firebase, JavaScript, HTML5 and CSS3.
 
 ## Project Status
 
-This project is currently in development. Additional functionality as well some UI effects and UI fixings are in progress.
+This project is currently in development. Additional functionality as well as some UI effects, animations and adjustments are in progress.
 
-## Project Screen Shots
+## Project Demo & Screen Shots
 
-![alt text](https://github.com/oplevan/netflix-clone/raw/master/screenshots/netflix-clone-1.jpg 'screenshot 1')
-![alt text](https://github.com/oplevan/netflix-clone/raw/master/screenshots/netflix-clone-2.jpg 'screenshot 2')
-![alt text](https://github.com/oplevan/netflix-clone/raw/master/screenshots/netflix-clone-3.jpg 'screenshot 3')
-![alt text](https://github.com/oplevan/netflix-clone/raw/master/screenshots/netflix-clone-4.jpg 'screenshot 4')
-![alt text](https://github.com/oplevan/netflix-clone/raw/master/screenshots/netflix-clone-5.jpg 'screenshot 5')
-![alt text](https://github.com/oplevan/netflix-clone/raw/master/screenshots/netflix-clone-6.jpg 'screenshot 6')
+..\* [Live demo](https://www.google.com). If don't wish to sign up you can use guest login details below
+Login: `guest@test.com`
+Password: `guest123`
+
+..\* For Screen Shots go to `screenshots` folder in this repository or click the [link](../screenshots)
 
 ## Installation and Setup Instructions
 
