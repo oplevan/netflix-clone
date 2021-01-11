@@ -1,0 +1,255 @@
+/**
+===============================
+Carousel Item Preview Styles
+===============================
+**/
+.miniModal {
+  cursor: pointer;
+}
+.miniModal--container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.close-modal {
+  top: 52px;
+  width: 295px;
+}
+.miniModal--player {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.miniModal img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+.miniModal--info {
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
+  background: #181818;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: translate(0, 100%);
+  animation: customFadeIn 0.2s linear;
+}
+@keyframes customFadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+.netflix .miniModal--info {
+  transform: translate(0, 0);
+}
+.close-modal .miniModal--info {
+  opacity: 1;
+  animation: customFadeOut 0.2s linear;
+}
+@keyframes customFadeOut {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.miniModal--close-btn {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #eee;
+}
+.buttonControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0 25px 0;
+}
+.buttonControls--left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.buttonControls .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 2px #4d4d4d;
+  color: #eee;
+  font-size: 1.8rem;
+  margin: 0 0.3rem;
+  transition: 0.1s linear;
+  cursor: pointer;
+  position: relative;
+}
+@media only screen and (max-width: 1399px) {
+  .buttonControls {
+    margin-bottom: 20px;
+  }
+  .buttonControls .btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+.btn .tooltip {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -70px;
+  background: #eee;
+  color: black;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  transition-delay: 0.2s;
+  white-space: nowrap;
+}
+.btn .tooltip:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-12px);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #eee;
+}
+.btn:hover .tooltip {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.buttonControls .btn:first-of-type {
+  margin-left: 0;
+}
+.buttonControls .btn:last-of-type {
+  margin-right: 0;
+}
+.btn.play {
+  border-color: #eee;
+  color: black;
+  background-color: #eee;
+}
+.btn.thumb-up,
+.btn.thumb-down {
+  font-size: 1.3rem;
+}
+.netflix .btn.thumb-up,
+.netflix .btn.thumb-down {
+  display: none;
+}
+
+.buttonControls .btn:hover {
+  border-color: #eee;
+}
+.video-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.video-metadata div {
+  margin-right: 10px;
+}
+.video-metadata .match {
+  color: green;
+  font-weight: 600;
+}
+.video-metadata .maturity {
+  width: 28px;
+}
+.video-metadata .maturity img {
+  max-width: 100%;
+}
+.video-metadata .duration {
+  color: white;
+}
+.tags {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.tags li {
+  margin-right: 10px;
+  padding-right: 10px;
+  position: relative;
+  font-size: 0.9rem;
+}
+.tags li:after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #4d4d4d;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tags li:last-of-type {
+  margin: 0;
+  padding: 0;
+}
+.tags li:last-of-type:after {
+  display: none;
+}
+@media only screen and (max-width: 799px) {
+  .buttonControls {
+    margin-bottom: 10px;
+  }
+  .buttonControls .btn {
+    width: 18px;
+    height: 18px;
+    font-size: 1rem;
+  }
+  .btn.thumb-up,
+  .btn.thumb-down {
+    font-size: 0.8rem;
+  }
+  .video-metadata {
+    font-size: 13px;
+    font-weight: 400;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tags {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .video-metadata .maturity {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+}

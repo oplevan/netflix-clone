@@ -1,0 +1,234 @@
+.bigModalOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.react-responsive-modal-closeButton {
+  outline: none;
+}
+.previewModal--close svg {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(18, 18, 18, 1);
+  border-radius: 50%;
+  padding: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.previewModal--wrap {
+  margin-bottom: 2em;
+  left: auto;
+  transform-origin: 50% 12.5%;
+  top: 2em;
+  bottom: 2em;
+  /* width: 850px;
+  min-width: 850px; */
+  opacity: 1;
+  transform: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-color: rgba(18, 18, 18, 1);
+  color: #ffffff;
+  padding: 0;
+}
+.previewModal--container {
+  background-color: transparent;
+  font-size: 16px;
+  z-index: 2;
+  overflow: hidden;
+}
+.previewModal--player {
+  position: relative;
+}
+.previewModal--player .gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 18, 0) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
+.previewModal--player img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+.previewModal--logo {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  width: 40%;
+}
+.previewModal--logo img {
+  width: 100%;
+}
+.previewModal--container .previewModal--info {
+  background-color: rgba(18, 18, 18, 1);
+  position: relative;
+  padding: 1.5rem 0;
+}
+.detail-modal-container,
+.moreLikeThis--wrapper {
+  padding: 0 5%;
+}
+.buttonControls.bigModal {
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  right: 5%;
+  z-index: 1;
+}
+.buttonControls.bigModal .btn {
+  background-color: rgba(42, 42, 42, 0.6);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.buttonControls.bigModal .btn:hover {
+  border-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+.buttonControls.bigModal .btn.play {
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  width: auto;
+  font-size: 2.5rem;
+  padding: 0 1.7rem 0 1rem;
+}
+
+.buttonControls.bigModal .btn.play span {
+  margin-left: 0.3vw;
+  font-size: 1.6rem;
+}
+.btn.volume {
+  opacity: 0.4;
+}
+.detail-modal-container {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+}
+.detail-modal-container p {
+  line-height: 27px;
+  font-size: 18px;
+}
+.previewModal--tags {
+  font-size: 13px;
+  line-height: 22px;
+  margin-bottom: 1em;
+  word-break: break-word;
+}
+.previewModal--tags .label,
+.previewModal--tags .comma {
+  color: #777;
+  font-size: 13px;
+}
+.previewModal--tags .tag-item,
+.previewModal--tags .tag-more {
+  color: #ddd;
+  margin: 0;
+  cursor: pointer;
+  outline-color: #fff;
+}
+.previewModal--tags .tag-item:hover,
+.previewModal--tags .tag-more:hover {
+  color: white;
+  text-decoration: underline;
+}
+.moreLikeThis--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+.moreLikeThis--card {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin: 0.1em;
+  height: 100%;
+}
+.imageWrapper {
+  position: relative;
+  line-height: 0;
+  font-size: 0;
+}
+.imageWrapper img {
+  width: 100%;
+}
+.imageWrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    198deg,
+    rgba(0, 0, 0, 0.9) 0,
+    rgba(24, 24, 24, 0.5) 20%,
+    transparent 28%
+  );
+}
+.imageWrapper .duration {
+  line-height: normal;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  white-space: nowrap;
+}
+.playIcon {
+  position: absolute;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+.moreLikeThis--card:hover .playIcon {
+  opacity: 1;
+}
+.playIcon svg {
+  width: 2em;
+  height: 2em;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  background-color: rgba(30, 30, 20, 0.5);
+}
+.metadataWrapper {
+  background-color: #2f2f2f;
+  padding: 5%;
+  height: 100%;
+}
+.metadataWrapper p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+@media (max-width: 600px) {
+  .buttonControls.bigModal .btn.play {
+    font-size: 1.2rem;
+    padding: 0 1rem 0 0.6rem;
+  }
+  .buttonControls.bigModal .btn.play span {
+    font-size: 0.8rem;
+  }
+}

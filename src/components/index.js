@@ -1,0 +1,15 @@
+export { default as Jumbotron } from './jumbotron';
+export { default as Accordion } from './accordion';
+export { default as Footer } from './footer';
+export { default as OptForm } from './optForm';
+export { default as Header } from './header';
+export { default as Feature } from './feature';
+export { default as Form } from './form';
+export { default as Profiles } from './profiles';
+export { default as Loading } from './loading';
+export { default as Main } from './card';
+export { default as Player } from './player';
+export { default as Billboard } from './billboard';
+export { default as CategoryCarousel } from './carousel';
+export { default as BigModal } from './bigModal';
+export { default as MiniModal } from './miniModal';
