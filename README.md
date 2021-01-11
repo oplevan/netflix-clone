@@ -1,6 +1,6 @@
 ## Netflix Clone
 
-This is Netflix Clone project, built with React, Firebase, JavaScript, HTML5 and CSS3.
+This project is a replica of Netflix built with React, Firebase, JavaScript, HTML5 and CSS3.
 
 ## Project Status
 
@@ -8,13 +8,13 @@ This project is currently in development. Additional functionality as well as so
 
 ## Project Demo & Screen Shots
 
-- [Live demo](https://www.google.com).
+- [Live demo](https://netflix-oleg.netlify.app/).
 
   \*\* If you don't wish to sign up you can use login details below:
 
-  \*\*\* Login: `guest@test.com`
+  \*\*\* Login: `test@test.com`
 
-  \*\*\* Password: `guest123`
+  \*\*\* Password: `test123`
 
 - For Screen Shots go to `screenshots` folder in this repository or click the [link](https://github.com/oplevan/netflix-clone/tree/master/screenshots)
 
